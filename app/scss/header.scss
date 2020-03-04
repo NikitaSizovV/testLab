@@ -1,0 +1,213 @@
+// * import mixins and variables
+@import 'mixins';
+
+//? first screen
+
+
+// ? header
+.header {
+    @include row;
+    height: 110px;
+    padding: 25px 95px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    background: rgba(255, 255, 255, 0);
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    transition: .5s;
+    @media (max-width: 640px){
+        padding: 25px 10px;
+        height: 60px;
+    }
+
+    .logo {
+        width: 219px;
+        height: 58px;
+        transition: .5s;
+        @media (max-width: 640px){
+            height: 27px;
+            width: 102px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .links {
+        @include row;
+        align-items: center;
+
+        &__phone {
+            @include row;
+            transition: .5s;
+            font-family: $baseFont;
+            @media (max-width: 860px){
+                display: none;
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+                margin-right: 20px;
+            }
+
+            a {
+                color: white;
+                font-size: 24px;
+                text-decoration: none;
+            }
+        }
+
+        &__social {
+            margin-left: (42-28)px;
+            cursor: pointer;
+            @media (max-width: 860px){
+                display: none;
+            }
+
+            img {
+                height: 34px;
+                width: 34px;
+                margin-left: 28px;
+            }
+        }
+
+        .nav-btn {
+            margin-left: 56px;
+            cursor: pointer;
+
+            .line {
+                width: 50px;
+                height: 2px;
+                background-color: #fff;
+                display: block;
+                margin: 9px auto;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &.is-active .line {
+                background-color: #303030;
+
+                &:nth-child(1) {
+                    transform: translateY(6px) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(-6px) rotate(-45deg);
+                }
+            }
+
+        }
+    }
+}
+
+.white {
+    .line {
+        background-color: black !important;
+    }
+}
+
+//? navigation
+
+.nav {
+    height: 0;
+    width: 100%;
+    max-width: 1920px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 110px;
+    z-index: 100;
+    @media (max-width: 640px){
+        top: 60px;
+    }
+
+    .menu {
+        opacity: 0;
+        margin: auto;
+        list-style-type: none;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        &__item {
+            font-size: 50px;
+            font-family: 'Museo Sans Cyrl 700';
+            margin-top: 37px;
+            color: black;
+            @media (max-width: 640px){
+                margin-top: 15px;
+                font-size: 20px;
+            }
+        }
+    
+    
+        
+            li {
+                text-align: center;
+                line-height: 1;
+                text-decoration: none;
+                cursor: pointer;
+    
+                &:after {
+                    display: block;
+                    content: "";
+                    height: 4px;
+                    width: 0%;
+                    background-color: black;
+                    transition: width .5s ease;
+                    margin-top: 5px;
+                }
+    
+                &:hover:after,
+                &:focus:after {
+                    width: 100%;
+                }
+            }
+    
+
+        
+    }
+}
+
+.phone {
+    @include row;
+    font-family: $baseFont;
+    transition: .5s;
+    @media (max-width: 860px){
+        display: none;
+    }
+
+    img {
+        height: 24px;
+        width: 24px;
+        margin-right: 20px;
+    }
+
+    a {
+        color: black;
+        font-size: 24px;
+        text-decoration: none;
+    }
+}
+
+.social {
+    cursor: pointer;
+    @include row;
+    justify-content: center;
+    margin-right: 15px;
+    @media (max-width: 860px){
+        display: none;
+    }
+
+    img {
+        height: 34px;
+        width: 34px;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,48 @@
+@import 'mixins';
+
+//*
+.third-screen {
+    padding: 150px 88px;
+    background: linear-gradient(180deg, #FDF4F4 0%, #ECF3EC 100%);
+    @media (max-width: 640px) {
+        padding: 150px 10px;
+    }
+}
+
+.news {
+    @include row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 61px;
+    &__item {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        .photo {
+            height: auto;
+            width: 100%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            transition: .3s;
+            cursor: pointer;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            &:hover{
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+            }
+        }
+        .text{
+            &__title{
+                margin-top: 26px;
+                @include baseTextBold;
+            }
+            &__description{
+                @include baseText;
+                margin-top: 10px;
+                line-height: 160%;
+            }
+        }
+    }
+}

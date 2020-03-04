@@ -1,0 +1,43 @@
+
+// * Variables
+$mainRedColor: #FF3754;
+$h1: 90px;
+$h2: 70px;
+$subtitle: 50px;
+$baseFont: 'Museo Sans Cyrl 300';
+$baseFontBold: 'Museo Sans Cyrl 700';
+
+
+//* Mixins
+@mixin baseText{
+    font-family: $baseFont;
+    font-size: 18px;
+    color: #303030;
+}
+
+@mixin baseTextBold{
+    @include baseText;
+    font-weight: 700;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin retina-image($image, $width, $height) {
+    @media (min--moz-device-pixel-ratio: 1.3),
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
+        background-image: url($image);
+        background-size: $width $height;
+    }
+ }
+

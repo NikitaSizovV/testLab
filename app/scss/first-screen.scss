@@ -1,0 +1,118 @@
+@import 'mixins';
+
+//? first screen
+.first-screen{
+    width: 100%;
+    background: url('../img/main_screen.jpg') no-repeat;
+    padding:110px 0 84px 0;
+    margin-top: auto;
+    section{
+        padding: 0px 95px;
+        @media (max-width: 640px){
+            padding: 0px 10px;
+        }
+    }
+    @media (max-width: 640px){
+        background-size: 100% 40%;
+        padding:110px 0 24px 0;
+    }
+}
+.main{
+    &__title{
+        margin-top: 80px;
+        font-size: $h1;
+        font-family: 'Bebas Neue';
+        color: white;
+        text-transform: uppercase;
+        @media (max-width: 640px) {
+            font-size: 50px;
+        }
+    }
+    &__subtitle{
+        color: #fff;
+        font-size: $subtitle;
+        font-family: $baseFont;
+        @media (max-width: 640px) {
+            font-size: 20px;
+        }
+    }
+}
+.winners{
+    margin-top: 50px;
+    @include column;
+    @media (max-width: 640px) {
+        margin-top: 0px;
+        flex-direction: column-reverse;
+    }
+    &__item{
+        @include row;
+        align-items: center;
+        @media (max-width: 640px){
+            margin-top: 20px;
+        }
+        .images{
+            @include row;
+            align-items: center;
+            img:nth-child(1){
+                height: 70px;
+                width: 70px;
+            }
+            img:nth-child(2){
+                height: 20px;
+                width: 20px;
+                margin-left: 5px;
+            }
+        }
+        .title{
+            margin-left: 52px;
+            font-size: 24px;
+            color: white;
+            font-family: $baseFontBold;
+            @media (max-width: 640px) {
+                color: black;
+                text-align: left;
+                font-size: 14px;
+                margin-left: 15px;
+            }
+        }
+        .main__winner{
+            padding: 4px;
+            max-height: 50px;
+            font-size: 36px;
+            background: $mainRedColor;
+            border-radius: 4px;
+            color: white;
+            @media (max-width: 640px){
+                font-size: 20px;
+            }
+        }
+    }
+}
+.button{
+    font-family: $baseFontBold;
+    font-size: 19px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    background: $mainRedColor;
+    border-radius: 4px;
+    height: 68px;
+    width: 100%;
+    max-width: 412px;
+    color: white;
+    margin-top: 120px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        background: rgb(255,75,104);
+    }
+    @media (max-width: 860px){
+        margin-top: 50px;
+    }
+}
+
+.red{
+    color: $mainRedColor
+}
+

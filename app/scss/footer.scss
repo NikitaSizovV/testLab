@@ -1,0 +1,15 @@
+@import 'mixins';
+
+.footer{
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        @include baseText;
+    }
+    img{
+        height: 38px;
+        width: 38px;
+    }
+}

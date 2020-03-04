@@ -1,0 +1,138 @@
+.first-screen {
+  width: 100%;
+  background: url("../img/main_screen.jpg") no-repeat;
+  padding: 110px 0 84px 0;
+  margin-top: auto; }
+  .first-screen section {
+    padding: 0px 95px; }
+    @media (max-width: 640px) {
+      .first-screen section {
+        padding: 0px 10px; } }
+  @media (max-width: 640px) {
+    .first-screen {
+      background-size: 100% 40%;
+      padding: 110px 0 24px 0; } }
+
+.main__title {
+  margin-top: 80px;
+  font-size: 90px;
+  font-family: 'Bebas Neue';
+  color: white;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .main__title {
+      font-size: 50px; } }
+
+.main__subtitle {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Museo Sans Cyrl 300"; }
+  @media (max-width: 640px) {
+    .main__subtitle {
+      font-size: 20px; } }
+
+.winners {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 640px) {
+    .winners {
+      margin-top: 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+  .winners__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 640px) {
+      .winners__item {
+        margin-top: 20px; } }
+    .winners__item .images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .winners__item .images img:nth-child(1) {
+        height: 70px;
+        width: 70px; }
+      .winners__item .images img:nth-child(2) {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px; }
+    .winners__item .title {
+      margin-left: 52px;
+      font-size: 24px;
+      color: white;
+      font-family: "Museo Sans Cyrl 700"; }
+      @media (max-width: 640px) {
+        .winners__item .title {
+          color: black;
+          text-align: left;
+          font-size: 14px;
+          margin-left: 15px; } }
+    .winners__item .main__winner {
+      padding: 4px;
+      max-height: 50px;
+      font-size: 36px;
+      background: #FF3754;
+      border-radius: 4px;
+      color: white; }
+      @media (max-width: 640px) {
+        .winners__item .main__winner {
+          font-size: 20px; } }
+
+.button {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 19px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.155em;
+  text-transform: uppercase;
+  background: #FF3754;
+  border-radius: 4px;
+  height: 68px;
+  width: 100%;
+  max-width: 412px;
+  color: white;
+  margin-top: 120px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer; }
+  .button:hover {
+    background: #ff4b68; }
+  @media (max-width: 860px) {
+    .button {
+      margin-top: 50px; } }
+
+.red {
+  color: #FF3754; }

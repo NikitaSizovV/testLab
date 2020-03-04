@@ -1,0 +1,847 @@
+.first-screen {
+  width: 100%;
+  background: url("../img/main_screen.jpg") no-repeat;
+  padding: 110px 0 84px 0;
+  margin-top: auto; }
+  .first-screen section {
+    padding: 0px 95px; }
+    @media (max-width: 640px) {
+      .first-screen section {
+        padding: 0px 10px; } }
+  @media (max-width: 640px) {
+    .first-screen {
+      background-size: 100% 40%;
+      padding: 110px 0 24px 0; } }
+
+.main__title {
+  margin-top: 80px;
+  font-size: 90px;
+  font-family: 'Bebas Neue';
+  color: white;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .main__title {
+      font-size: 50px; } }
+
+.main__subtitle {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Museo Sans Cyrl 300"; }
+  @media (max-width: 640px) {
+    .main__subtitle {
+      font-size: 20px; } }
+
+.winners {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (max-width: 640px) {
+    .winners {
+      margin-top: 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+  .winners__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 640px) {
+      .winners__item {
+        margin-top: 20px; } }
+    .winners__item .images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .winners__item .images img:nth-child(1) {
+        height: 70px;
+        width: 70px; }
+      .winners__item .images img:nth-child(2) {
+        height: 20px;
+        width: 20px;
+        margin-left: 5px; }
+    .winners__item .title {
+      margin-left: 52px;
+      font-size: 24px;
+      color: white;
+      font-family: "Museo Sans Cyrl 700"; }
+      @media (max-width: 640px) {
+        .winners__item .title {
+          color: black;
+          text-align: left;
+          font-size: 14px;
+          margin-left: 15px; } }
+    .winners__item .main__winner {
+      padding: 4px;
+      max-height: 50px;
+      font-size: 36px;
+      background: #FF3754;
+      border-radius: 4px;
+      color: white; }
+      @media (max-width: 640px) {
+        .winners__item .main__winner {
+          font-size: 20px; } }
+
+.button {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 19px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: 0.155em;
+  text-transform: uppercase;
+  background: #FF3754;
+  border-radius: 4px;
+  height: 68px;
+  width: 100%;
+  max-width: 412px;
+  color: white;
+  margin-top: 120px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer; }
+  .button:hover {
+    background: #ff4b68; }
+  @media (max-width: 860px) {
+    .button {
+      margin-top: 50px; } }
+
+.red {
+  color: #FF3754; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+.footer {
+  padding: 0px 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer p {
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 18px;
+    color: #303030; }
+  .footer img {
+    height: 38px;
+    width: 38px; }
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 110px;
+  padding: 25px 95px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  background: rgba(255, 255, 255, 0);
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  @media (max-width: 640px) {
+    .header {
+      padding: 25px 10px;
+      height: 60px; } }
+  .header .logo {
+    width: 219px;
+    height: 58px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    @media (max-width: 640px) {
+      .header .logo {
+        height: 27px;
+        width: 102px; } }
+    .header .logo img {
+      height: 100%;
+      width: 100%; }
+  .header .links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .links__phone {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      font-family: "Museo Sans Cyrl 300"; }
+      @media (max-width: 860px) {
+        .header .links__phone {
+          display: none; } }
+      .header .links__phone img {
+        height: 24px;
+        width: 24px;
+        margin-right: 20px; }
+      .header .links__phone a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none; }
+    .header .links__social {
+      margin-left: 14 px;
+      cursor: pointer; }
+      @media (max-width: 860px) {
+        .header .links__social {
+          display: none; } }
+      .header .links__social img {
+        height: 34px;
+        width: 34px;
+        margin-left: 28px; }
+    .header .links .nav-btn {
+      margin-left: 56px;
+      cursor: pointer; }
+      .header .links .nav-btn .line {
+        width: 50px;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        margin: 9px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .header .links .nav-btn.is-active .line {
+        background-color: #303030; }
+        .header .links .nav-btn.is-active .line:nth-child(1) {
+          -webkit-transform: translateY(6px) rotate(45deg);
+              -ms-transform: translateY(6px) rotate(45deg);
+                  transform: translateY(6px) rotate(45deg); }
+        .header .links .nav-btn.is-active .line:nth-child(2) {
+          -webkit-transform: translateY(-6px) rotate(-45deg);
+              -ms-transform: translateY(-6px) rotate(-45deg);
+                  transform: translateY(-6px) rotate(-45deg); }
+
+.white .line {
+  background-color: black !important; }
+
+.nav {
+  height: 0;
+  width: 100%;
+  max-width: 1920px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 110px;
+  z-index: 100; }
+  @media (max-width: 640px) {
+    .nav {
+      top: 60px; } }
+  .nav .menu {
+    opacity: 0;
+    margin: auto;
+    list-style-type: none;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .nav .menu__item {
+      font-size: 50px;
+      font-family: 'Museo Sans Cyrl 700';
+      margin-top: 37px;
+      color: black; }
+      @media (max-width: 640px) {
+        .nav .menu__item {
+          margin-top: 15px;
+          font-size: 20px; } }
+    .nav .menu li {
+      text-align: center;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer; }
+      .nav .menu li:after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 0%;
+        background-color: black;
+        -webkit-transition: width .5s ease;
+        -o-transition: width .5s ease;
+        transition: width .5s ease;
+        margin-top: 5px; }
+      .nav .menu li:hover:after, .nav .menu li:focus:after {
+        width: 100%; }
+
+.phone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Museo Sans Cyrl 300";
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  @media (max-width: 860px) {
+    .phone {
+      display: none; } }
+  .phone img {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px; }
+  .phone a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none; }
+
+.social {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px; }
+  @media (max-width: 860px) {
+    .social {
+      display: none; } }
+  .social img {
+    height: 34px;
+    width: 34px;
+    margin-left: 15px; }
+
+a {
+  text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  max-width: 1920px !important;
+  margin: auto; }
+
+.no-scroll {
+  overflow-y: hidden; }
+
+.white-back {
+  background: white; }
+
+@-webkit-keyframes slideup {
+  100% {
+    height: 0px;
+    opacity: 0; }
+  0% {
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    opacity: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex; } }
+
+@keyframes slideup {
+  100% {
+    height: 0px;
+    opacity: 0; }
+  0% {
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    opacity: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@-webkit-keyframes slidedown {
+  100% {
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    opacity: 1; }
+  0% {
+    height: 0px;
+    opacity: 0; } }
+
+@keyframes slidedown {
+  100% {
+    height: -webkit-calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    opacity: 1; }
+  0% {
+    height: 0px;
+    opacity: 0; } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0; }
+  0% {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0; }
+  0% {
+    opacity: 1; } }
+
+@-webkit-keyframes hide {
+  0% {
+    height: 520px; }
+  100% {
+    height: 0; } }
+
+@keyframes hide {
+  0% {
+    height: 520px; }
+  100% {
+    height: 0; } }
+
+@-webkit-keyframes antihide {
+  100% {
+    height: 520px; }
+  0% {
+    height: 0; } }
+
+@keyframes antihide {
+  100% {
+    height: 520px; }
+  0% {
+    height: 0; } }
+
+.hidden {
+  -webkit-animation: hide 1.5s ease-out;
+          animation: hide 1.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.notHidden {
+  -webkit-animation: antihide 1.5s ease-in;
+          animation: antihide 1.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.fade {
+  -webkit-animation: fade .5s ease-in .5s;
+          animation: fade .5s ease-in .5s; }
+
+.fadeOut {
+  -webkit-animation: fadeOut .2s ease-in;
+          animation: fadeOut .2s ease-in; }
+
+.slidedown {
+  -webkit-animation: slidedown 0.5s ease-in !important;
+          animation: slidedown 0.5s ease-in !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-calc(100vh - 100px);
+  height: calc(100vh - 100px); }
+
+.slideup {
+  -webkit-animation: slideup 0.5s ease-out !important;
+          animation: slideup 0.5s ease-out !important; }
+
+.padding {
+  padding-right: 14px; }
+
+.white-background {
+  background: white; }
+
+.black-color {
+  color: black !important; }
+
+.no-overflow {
+  overflow-y: hidden; }
+
+.container {
+  max-width: 1920px; }
+
+.h2 {
+  font-family: 'Bebas Neue';
+  font-size: 70px;
+  color: #FF3754;
+  text-transform: uppercase; }
+  @media screen and (max-width: 670px) {
+    .h2 {
+      font-size: 40px; } }
+
+@media screen and (max-width: 670px) {
+  .h3 {
+    font-size: 30px !important; } }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important; }
+
+.mobile {
+  display: none; }
+  @media (max-width: 640px) {
+    .mobile {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
+
+.title {
+  text-align: center; }
+
+.container-border {
+  margin: auto;
+  max-width: -webkit-calc(100% - 176px);
+  max-width: calc(100% - 176px);
+  padding: 37px 120px !important;
+  background: url("../img/border.png") no-repeat;
+  background-size: 100% 95%; }
+  @media screen and (max-width: 1150px) {
+    .container-border {
+      padding: 37px 30px !important; } }
+  @media screen and (max-width: 950px) {
+    .container-border {
+      background: none; } }
+  @media (max-width: 640px) {
+    .container-border {
+      padding: 0px 10px !important;
+      max-width: 100%; } }
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100% !important; }
+  @media screen and (max-width: 950px) {
+    .swiper-slide {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  @media (max-width: 640px) {
+    .swiper-slide {
+      margin-left: 2px; } }
+
+.second-screen {
+  padding: 88px 0 0 0; }
+  @media (max-width: 640px) {
+    .second-screen {
+      padding: 40px 0 0; } }
+  .second-screen .h3 {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #888888; }
+  @media screen and (max-width: 950px) {
+    .second-screen .text h2, .second-screen .text h3, .second-screen .text__snippet {
+      text-align: center; } }
+  @media screen and (max-width: 670px) {
+    .second-screen .text {
+      margin-top: 25px; }
+      .second-screen .text .text__title {
+        margin-top: 14px; } }
+  .second-screen .text__snippet {
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    margin-top: 17px; }
+  .second-screen .text__list {
+    list-style-type: none;
+    margin-top: 39px; }
+    .second-screen .text__list li {
+      font-family: "Museo Sans Cyrl 300";
+      font-size: 18px;
+      color: #303030;
+      line-height: 29px; }
+      .second-screen .text__list li:before {
+        content: ' ';
+        height: 10px;
+        width: 10px;
+        background: #FF3754;
+        border-radius: 3px;
+        display: inline-block;
+        margin-right: 29px; }
+  .second-screen .text__title {
+    margin-top: 20px;
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 18px;
+    color: #303030;
+    font-weight: 700; }
+  .second-screen .text__description {
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 18px;
+    color: #303030; }
+  .second-screen .text .button_hide {
+    display: none; }
+    @media screen and (max-width: 950px) {
+      .second-screen .text .button_hide {
+        display: block;
+        height: 40px;
+        width: 150px;
+        border: 1px solid #888888;
+        border-radius: 4px;
+        font-family: "Museo Sans Cyrl 300";
+        font-size: 13px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.155em;
+        text-transform: uppercase;
+        color: #888888;
+        margin: auto;
+        margin-top: 40px; } }
+  .second-screen .photo img {
+    margin: auto;
+    height: 550px;
+    width: 550px;
+    margin-right: 2px; }
+    @media screen and (max-width: 1400px) {
+      .second-screen .photo img {
+        height: 400px;
+        width: 400px; } }
+    @media screen and (max-width: 670px) {
+      .second-screen .photo img {
+        height: 128px;
+        width: 128px; } }
+  .second-screen .control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .second-screen .control .pagination {
+      width: auto; }
+
+.prev-slide, .next-slide {
+  cursor: pointer;
+  outline: none; }
+  .prev-slide svg path, .next-slide svg path {
+    fill: #888888;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .prev-slide:hover svg path, .next-slide:hover svg path {
+    fill: #FF3754; }
+
+.prev-slide {
+  margin-right: 50px; }
+
+.next-slide {
+  margin-left: 50px; }
+
+.third-screen {
+  padding: 150px 88px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FDF4F4), to(#ECF3EC));
+  background: -o-linear-gradient(top, #FDF4F4 0%, #ECF3EC 100%);
+  background: linear-gradient(180deg, #FDF4F4 0%, #ECF3EC 100%); }
+  @media (max-width: 640px) {
+    .third-screen {
+      padding: 150px 10px; } }
+
+.news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 61px; }
+  .news__item {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 400px; }
+    .news__item .photo {
+      height: auto;
+      width: 100%;
+      -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      cursor: pointer; }
+      .news__item .photo img {
+        height: 100%;
+        width: 100%; }
+      .news__item .photo:hover {
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); }
+    .news__item .text__title {
+      margin-top: 26px;
+      font-family: "Museo Sans Cyrl 300";
+      font-size: 18px;
+      color: #303030;
+      font-weight: 700; }
+    .news__item .text__description {
+      font-family: "Museo Sans Cyrl 300";
+      font-size: 18px;
+      color: #303030;
+      margin-top: 10px;
+      line-height: 160%; }

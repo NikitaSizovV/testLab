@@ -1,0 +1,232 @@
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 110px;
+  padding: 25px 95px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  background: rgba(255, 255, 255, 0);
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  @media (max-width: 640px) {
+    .header {
+      padding: 25px 10px;
+      height: 60px; } }
+  .header .logo {
+    width: 219px;
+    height: 58px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    @media (max-width: 640px) {
+      .header .logo {
+        height: 27px;
+        width: 102px; } }
+    .header .logo img {
+      height: 100%;
+      width: 100%; }
+  .header .links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .links__phone {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      font-family: "Museo Sans Cyrl 300"; }
+      @media (max-width: 860px) {
+        .header .links__phone {
+          display: none; } }
+      .header .links__phone img {
+        height: 24px;
+        width: 24px;
+        margin-right: 20px; }
+      .header .links__phone a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none; }
+    .header .links__social {
+      margin-left: 14 px;
+      cursor: pointer; }
+      @media (max-width: 860px) {
+        .header .links__social {
+          display: none; } }
+      .header .links__social img {
+        height: 34px;
+        width: 34px;
+        margin-left: 28px; }
+    .header .links .nav-btn {
+      margin-left: 56px;
+      cursor: pointer; }
+      .header .links .nav-btn .line {
+        width: 50px;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        margin: 9px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .header .links .nav-btn.is-active .line {
+        background-color: #303030; }
+        .header .links .nav-btn.is-active .line:nth-child(1) {
+          -webkit-transform: translateY(6px) rotate(45deg);
+              -ms-transform: translateY(6px) rotate(45deg);
+                  transform: translateY(6px) rotate(45deg); }
+        .header .links .nav-btn.is-active .line:nth-child(2) {
+          -webkit-transform: translateY(-6px) rotate(-45deg);
+              -ms-transform: translateY(-6px) rotate(-45deg);
+                  transform: translateY(-6px) rotate(-45deg); }
+
+.white .line {
+  background-color: black !important; }
+
+.nav {
+  height: 0;
+  width: 100%;
+  max-width: 1920px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 110px;
+  z-index: 100; }
+  @media (max-width: 640px) {
+    .nav {
+      top: 60px; } }
+  .nav .menu {
+    opacity: 0;
+    margin: auto;
+    list-style-type: none;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .nav .menu__item {
+      font-size: 50px;
+      font-family: 'Museo Sans Cyrl 700';
+      margin-top: 37px;
+      color: black; }
+      @media (max-width: 640px) {
+        .nav .menu__item {
+          margin-top: 15px;
+          font-size: 20px; } }
+    .nav .menu li {
+      text-align: center;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer; }
+      .nav .menu li:after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 0%;
+        background-color: black;
+        -webkit-transition: width .5s ease;
+        -o-transition: width .5s ease;
+        transition: width .5s ease;
+        margin-top: 5px; }
+      .nav .menu li:hover:after, .nav .menu li:focus:after {
+        width: 100%; }
+
+.phone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Museo Sans Cyrl 300";
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  @media (max-width: 860px) {
+    .phone {
+      display: none; } }
+  .phone img {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px; }
+  .phone a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none; }
+
+.social {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px; }
+  @media (max-width: 860px) {
+    .social {
+      display: none; } }
+  .social img {
+    height: 34px;
+    width: 34px;
+    margin-left: 15px; }

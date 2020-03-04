@@ -1,0 +1,174 @@
+@import 'mixins';
+//*
+
+
+
+.title {
+    text-align: center;
+}
+
+//*slide
+
+
+.container-border {
+    margin: auto;
+    max-width: calc(100% - 176px);
+    padding: 37px 120px!important;
+    background: url('../img/border.png') no-repeat;
+    background-size: 100% 95%;
+    @media screen and (max-width:1150px){
+        padding: 37px 30px!important;
+    }
+    @media screen and (max-width: 950px){
+        background: none;
+    }
+    @media (max-width: 640px){
+        padding: 0px 10px!important;
+        max-width: 100%;
+    }
+}
+
+.swiper-slide {
+    @include row;
+    @media screen and (max-width: 950px){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    width: 100%!important;
+    @media (max-width: 640px){
+        margin-left: 2px;
+    }
+}
+
+.second-screen {
+    padding: 88px 0 0 0;
+    @media (max-width: 640px) {
+        padding: 40px 0 0;
+    }
+    
+    .h3 {
+        font-family: 'Bebas Neue';
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #888888;
+    }
+
+    .text {
+        @media screen and (max-width: 950px){
+            h2, h3, &__snippet{
+                text-align: center;
+
+            }
+        }
+        @media screen and (max-width: 670px){
+            margin-top: 25px;
+            .text__title{
+                margin-top: 14px;
+            }
+        }
+        &__snippet {
+            font-family: $baseFont;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.155em;
+            text-transform: uppercase;
+            margin-top: 17px;
+        }
+
+        &__list {
+            list-style-type: none;
+            margin-top: 39px;
+
+            li {
+                @include baseText;
+                line-height: 29px;
+
+                &:before {
+                    content: ' ';
+                    height: 10px;
+                    width: 10px;
+                    background: $mainRedColor;
+                    border-radius: 3px;
+                    display: inline-block;
+                    margin-right: 29px;
+                }
+            }
+        }
+
+        &__title {
+            margin-top: 20px;
+            @include baseTextBold;
+        }
+
+        ;
+
+        &__description {
+            @include baseText;
+        }
+        .button_hide{
+            display: none;
+            @media screen and (max-width: 950px){
+                display: block;
+                height: 40px;
+                width: 150px;
+                border: 1px solid #888888;
+                border-radius: 4px;
+                font-family: $baseFont;
+                font-size: 13px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: 0.155em;
+                text-transform: uppercase;
+                color: #888888;
+                margin: auto;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .photo {
+        img{
+            margin: auto;
+            height: 550px;
+            width: 550px;
+            margin-right: 2px;
+            @media screen and (max-width: 1400px){
+                height: 400px;
+                width: 400px;
+            }
+            @media screen and (max-width: 670px){
+                height: 128px;
+                width: 128px;
+            }
+        }
+        
+    }
+    .control{
+        @include row;
+        justify-content: center;
+        align-items: center;
+        .pagination{
+            width: auto;
+        }
+    }
+}
+
+.prev-slide, .next-slide{
+    cursor: pointer;
+    outline: none;
+    svg path{
+        fill: #888888;
+        transition: .3s;
+    }
+    &:hover{
+    svg path{
+        fill: $mainRedColor;
+    } 
+    }
+}
+.prev-slide{
+    margin-right: 50px;
+}
+.next-slide{
+    margin-left: 50px;
+}
